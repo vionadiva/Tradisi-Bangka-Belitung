@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak</title>
+  <style>
+:root {
+  --cream: #FCEDD8;
+  --yellow: #FFD464;
+  --salmon: #FF5E5E;
+  --pink: #E23C64;
+  --maroon: #B0183D;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, var(--maroon), var(--pink), var(--salmon));
+  min-height: 100vh;
+  color: var(--cream);
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px; 
+}
+
+.contact-card {
+  background: var(--cream);
+  color: var(--maroon);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+}
+
+.contact-card h2 {
+  margin-bottom: 10px;
+  color: var(--maroon);
+}
+
+.contact-card p {
+  margin: 5px 0;
+  color: var(--maroon);
+}
+
+.contact-card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: var(--salmon);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-card a:hover {
+  background: var(--yellow);
+  color: var(--maroon);
+}
+  </style>
+</head>
+
+<body>
+
+<img src="bgbatik.png" alt="Background Beranda" 
+  style="position: fixed; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-1;">
+
+ <div class="beranda-container">
+    <link rel="stylesheet" href="style.css" />
+    <header class="beranda-header">
+      <div class="logo">Polman Babel</div>
+      <nav class="beranda-nav">
+        <a href="index.html">Home</a>
+        <a href="tradisi.html">Tradisi</a>
+        <a href="Edukasi.html">Edukasi</a>
+        <a href="Lokasi.html">Lokasi</a>
+        <a href="Kontak.html">Kontak</a>
+      </nav>
+    </header>
+  </div>
+
+  <div class="contact-container">
+    <div class="contact-card">
+      <h2>Revaldi Alhaj</h2>
+      <p>General Manager</p>
+      <p>📞 <a href="tel:+6282164335513">Revaldi</a></p>
+      <p>✉️ <a href="mailto:revaldialhaj049@gmail.com">surel</a></p>
+      <a href="tel:+6281234567890">Hubungi Sekarang</a>
+    </div>
+
+    <div class="contact-card">
+      <h2>Viona Diva Shifana</h2>
+      <p>General Manager</p>
+      <p>📞 <a href="tel:+6281541151907">Viona</a></p>
+      <p>✉️ <a href="mailto:vionadivash@gmail.com">surel</a></p>
+      <a href="tel:+6281541151907">Hubungi Sekarang</a>
+    </div>
+
+    <div class="contact-card">
+      <h2>Irpan</h2>
+      <p>General Manager</p>
+      <p>📞 <a href="tel:+6285832803584">Irpan </a></p>
+      <p>✉️ <a href="mailto:revaldialhaj049@gmail.com">surel</a></p>
+      <a href="tel:+6285832803584">Hubungi Sekarang</a>
+    </div>
+  </div>
+
+</body>
+</html>

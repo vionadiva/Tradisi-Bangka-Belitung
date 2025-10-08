@@ -1,0 +1,240 @@
+:root {
+  --cream: #FCEDD8;
+  --yellow: #FFD464;
+  --salmon: #ffa0a0;
+  --pink: #E23C64;
+  --maroon: #B0183D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    135deg,
+    var(--maroon) 0%,
+    var(--pink) 30%,
+    var(--salmon) 65%,
+    var(--yellow) 100%
+  );
+  min-height: 100vh;
+  color: #333;
+  margin: 0;
+  padding-top: 80px;
+}
+
+.beranda-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  padding: 0 30px;
+}
+
+.beranda-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cream);
+  font-family: 'Arial Black', sans-serif;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.beranda-nav {
+  margin-left: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beranda-nav a {
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 0 6px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.beranda-nav a:hover {
+  border-color: #604c4c;
+  box-shadow: 0 0 6px #f4ecec,
+              0 0 12px #9c9c9c,
+              0 0 18px hsl(0, 10%, 51%);
+  background: rgba(0, 247, 255, 0.1);
+}
+
+.beranda-title {
+  font-size: 6rem;
+  color: var(--cream);
+  text-transform: uppercase;
+  font-family: 'Arial Black', sans-serif;
+  letter-spacing: 5px;
+  margin: 0;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+}
+
+.info-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--cream);
+  padding: 10px 0;
+  border-top: 1px solid var(--pink);
+  border-bottom: 1px solid var(--pink);
+  margin-bottom: 30px;
+}
+
+.info-bar div {
+  flex: 1;
+}
+.info-bar .tugasakhir,
+.info-bar .matkul,
+.info-bar .instagram {
+  text-align: right;
+}
+
+.content-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.video-background {
+  position: fixed;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;       
+}
+
+.gradient-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1;          
+  pointer-events: none;
+  background: linear-gradient(135deg,
+    var(--maroon) 0%,
+    var(--pink) 30%,
+    var(--salmon) 65%,
+    var(--yellow) 100%);
+  opacity: 0.4;
+  mix-blend-mode: overlay;  
+}
+
+.main-image {
+  flex: 2;
+  min-width: 300px;
+  background-color: var(--maroon);
+  border-radius: 12px;
+  height: 400px;
+  background-image: url('tradisi.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-section {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+}
+
+.about-section h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: white;
+}
+
+.about-photo {
+  width: 100%;
+  height: 300px; 
+  border-radius: 12px;
+  margin-top: 20px; 
+  background-image: url('pulau.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+}
+
+footer p {
+  margin-top: 20px;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.video-background {
+  position: fixed;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -2;       
+}
+
+.gradient-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1;          
+  pointer-events: none;
+  background: linear-gradient(135deg,
+    var(--maroon) 0%,
+    var(--pink) 30%,
+    var(--salmon) 65%,
+    var(--yellow) 100%);
+  opacity: 0.35; 
+  mix-blend-mode: overlay;  
+}

@@ -1,0 +1,123 @@
+:root {
+  --cream: #FCEDD8;
+  --yellow: #FFD464;
+  --salmon: #FF5E5E;
+  --pink: #E23C64;
+  --maroon: #B0183D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, var(--maroon), var(--pink), var(--salmon));
+  min-height: 100vh;
+  color: var(--cream);
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--maroon);
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px;
+}
+
+.navbar a:hover {
+  background-color: var(--yellow);
+  color: var(--maroon);
+}
+
+.navbar a.active {
+  background-color: var(--salmon);
+  color: white;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 2rem;
+  color: var(--yellow);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  background: var(--cream);
+  width: 220px;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  color: var(--maroon);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card h2 {
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
+  color: var(--maroon);
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: var(--salmon);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: var(--yellow);
+  color: var(--maroon);
+}
